@@ -1,7 +1,9 @@
 // randomCards variable
 const randomCards = document.querySelector(".cardsBtn");
+// errorMsg variable
 const errorMsg = document.querySelector('.error');
 
+// fetch data and return it into json
 const fetchCards = function () {
   fetch('https://deckofcardsapi.com/api/deck/new/shuffle')
     .then(function (response) {
@@ -18,10 +20,12 @@ const fetchCards = function () {
     })
 
     .then(function (response) {
-      // return new json file
+      // check if response is ok
       if (!response.ok) {
+        // if not throw an error
         throw new Error('Not 200 OK');
       }
+      // return new json file
       return response.json();
     })
 
@@ -56,6 +60,7 @@ const fetchCards = function () {
       randomCards.textContent = 'Shuffle Cards'
     })
 
+    // catch errors
     .catch(function (err) {
       // An error or `reject` from any of the above `.then()` blocks will end up here.
 
