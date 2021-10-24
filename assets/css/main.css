@@ -1,10 +1,9 @@
 body {
   background-color: #03381c;
-  font-weight: bold;
   text-align: center;
   text-shadow: 2.5px 2.5px #000000;
   color: #b19131;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Oleo Script', cursive;
 }
 
 .cards {
@@ -14,8 +13,7 @@ body {
 }
 
 button {
-  font-family: 'Permanent Marker', cursive;
-  font-weight: bold;
+  font-family: 'Oleo Script', cursive;
   padding: 1.5rem 2rem;
   font-size: clamp(1.5rem, 2vw, 2rem);
   background-color: #0ab7dd;
