@@ -37,6 +37,11 @@ const fetchCards = function () {
         output +=
           `<figure>
           <img src='${data.cards[i].image}' alt='${data.cards[i].suit}'>
+          <figcaption>        
+          ${data.cards[i].value}
+          -
+          ${data.cards[i].suit}
+          </figcaption>
           </figure>`
       }
 
