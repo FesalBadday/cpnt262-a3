@@ -1,3 +1,5 @@
+"use strict";
+
 // randomCards variable
 const randomCards = document.querySelector(".cardsBtn");
 // errorMsg variable
