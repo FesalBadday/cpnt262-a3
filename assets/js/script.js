@@ -1,5 +1,9 @@
 "use strict";
 
+
+// luxon date Time
+const DateTime = luxon.DateTime;
+
 // randomCards variable
 const randomCards = document.querySelector(".cardsBtn");
 // errorMsg variable
@@ -56,7 +60,9 @@ const fetchCards = function () {
       // print output
       cardsSection.innerHTML =
         `<fieldset>
-        <legend>Cards</legend>
+        <legend>Current Time 
+        ${DateTime.now().toFormat('MMM dd, yyyy - t')}
+        </legend>
         ${output}
         </fieldset>`;
 
