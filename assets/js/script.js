@@ -1,6 +1,5 @@
 "use strict";
 
-
 // luxon date Time
 const DateTime = luxon.DateTime;
 
@@ -17,6 +16,7 @@ const fetchCards = function () {
       if (!response.ok) {
         throw new Error('Not 200 OK');
       }
+      // return json file
       return response.json();
     })
 
@@ -57,10 +57,11 @@ const fetchCards = function () {
           </figure>`
       }
 
-      // print output
+      // print output and date
       cardsSection.innerHTML =
         `<fieldset>
-        <legend>Current Time 
+        <legend>
+        Current Time 
         ${DateTime.now().toFormat('MMM dd, yyyy - t')}
         </legend>
         ${output}
