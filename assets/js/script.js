@@ -42,7 +42,9 @@ const fetchCards = function () {
       for (let i = 0; i <= 3; i++) {
         output +=
           `<figure>
-          <img src='${data.cards[i].image}' alt='${data.cards[i].suit}'>
+          <a href='${data.cards[i].images.svg}' target='_blank'>
+          <img src='${data.cards[i].image}' alt='${data.cards[i].code} - ${data.cards[i].suit}'>
+          </a>
           <figcaption>        
           ${data.cards[i].value}
           -
