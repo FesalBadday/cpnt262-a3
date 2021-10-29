@@ -41,7 +41,11 @@ h1 {
 
 legend {
   margin: 0 auto;
+  padding: 1.5rem;
   font-size: clamp(1.8rem, 2vw, 3.5rem);
+  color: #0ab7dd;
+  box-shadow: #000 0px 0px 48px 0px inset, #000 0px 0px 0px 1px inset;
+  border-radius: 1rem;
 }
 
 fieldset {
