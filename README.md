@@ -4,9 +4,9 @@
 
 **Author :** Fesal Badday
 
-**Repo :** [Github Repo](https://github.com/FesalBadday/cpnt262-a3)
+**Repo :** [Github Repo](https://github.com/FesalBadday/fetching-deck-of-cards-api)
 
-**Site :** [Github Pages](https://FesalBadday.github.io/cpnt262-a3)
+**Site :** [Github Pages](https://FesalBadday.github.io/fetching-deck-of-cards-api)
 
 **Information :**
 
